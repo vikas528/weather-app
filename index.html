@@ -10,14 +10,13 @@
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="script.js"></script>
   <title>Live Weather</title>
+  <link rel="icon" href="icon.png" sizes="16x16">
 </head>
 <body>
-  <input type="text" id="search-bar" placeholder="Search among cities">
-  <!-- <div id="search-hit" href=""><a href="">GO</a></div> -->
-  <!-- <a href="http://google.com"><div id="search-hit" href="">GO</div></a> -->
-  <a href="http://google.com" class="buttons">
-    <div>GO</div>
-  </a>
+  <form>
+    <input type="text" id="search-bar" placeholder="search location">
+    <button class="buttons">GO</button>
+  </form>
   <div id="left-container">
     <p id="descrip"></p>
     <p id="name"></p>
@@ -27,11 +26,17 @@
     <img id="icon" src="" alt="not supported">
   </div>
   <div id="right-container">
-    <p id="humidity">Humidity: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-    <p id="wind-speed">Wind Speed: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</p>
-    <p id="max-temp">Max Temperature: &nbsp; &nbsp; &nbsp;</p>
-    <p id="min-temp">Min Temperature: &nbsp; &nbsp; &nbsp; </p>
-
+    <p id="weather"></p>
+    <p class="heading">Humidity</p>
+    <p id="humidity" class="heading-comp"></p>
+    <p class="heading">Wind Speed</p>
+    <p id="wind-speed" class="heading-comp"></p>
+    <p class="heading">Max Temperature</p>
+    <p id="max-temp" class="heading-comp"></p>
+    <p class="heading">Min Temperature</p>
+    <p id="min-temp" class="heading-comp"></p>
+    <p class="heading">Feels Like</p>
+    <p id="feel-like" class="heading-comp"></p>
   </div>
 </body>
 </html>
