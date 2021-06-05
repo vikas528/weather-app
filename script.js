@@ -19,7 +19,7 @@ $(document).ready(function(){
             temp_max = temp_max.toFixed(2) + " °C";
             let temp_min = data.main.temp_min-273;
             temp_min = temp_min.toFixed(2) + " °C";
-            let icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+            let icon = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
             let weather = data.weather[0].main;
             let descrip = data.weather[0].description;
             let feelLike = data.main.feels_like-273;
