@@ -4,10 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="script.js"></script>
   <title>Live Weather</title>
+  <link rel="icon" href="icon.png" sizes="16x16">
 </head>
 <body>
-  
+  <form>
+    <input type="text" id="search-bar" placeholder="search location">
+    <button class="buttons">GO</button>
+  </form>
+  <div id="left-container">
+    <p id="descrip"></p>
+    <p id="name"></p>
+    <p id="date"></p>
+    <p id="time"></p>
+    <p id="temp"></p>
+    <img id="icon" src="" alt="not supported">
+  </div>
+  <div id="right-container">
+    <p id="weather"></p>
+    <p class="heading">Humidity</p>
+    <p id="humidity" class="heading-comp"></p>
+    <p class="heading">Wind Speed</p>
+    <p id="wind-speed" class="heading-comp"></p>
+    <p class="heading">Max Temperature</p>
+    <p id="max-temp" class="heading-comp"></p>
+    <p class="heading">Min Temperature</p>
+    <p id="min-temp" class="heading-comp"></p>
+    <p class="heading">Feels Like</p>
+    <p id="feel-like" class="heading-comp"></p>
+  </div>
 </body>
 </html>
