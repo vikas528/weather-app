@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 
     $.getWeather = function(city){
-        $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=229c52b9fb20712b1f26fac20e7b1d2e", function(data){
+        $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=229c52b9fb20712b1f26fac20e7b1d2e", function(data){
             // console.log(data);
             let name = data.name;
             let temp = data.main.temp-273;
